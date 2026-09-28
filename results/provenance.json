@@ -1,0 +1,22 @@
+{
+  "python": "3.10.1",
+  "platform": "Linux-5.14.0-570.134.1.el9_6.x86_64-x86_64-with-glibc2.34",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.2",
+    "pyscf": "2.13.0",
+    "qiskit": "1.2.4",
+    "qiskit-nature": "0.7.2",
+    "qiskit-algorithms": "0.3.1",
+    "edftpy": "0.0.1.dev0",
+    "qepy": "7.2.1rc0",
+    "dftpy": "2.2.1.dev26+ga8abae515",
+    "ase": "3.28.0"
+  },
+  "code": {
+    "QIS_QE_commit": "b0b402cd6a2f9d01ccbc3468df3ddb21f203c459",
+    "casidapy_path": "/projectsn/mp1009_1/am4655/casidapy",
+    "pyscf_embed_source": "JezsMartinez/pyscf@PRG_2026 vemb spline, ported to casidapy.pyscf_embed (injected at get_hcore)"
+  },
+  "venv": "stddft (/projectsn/mp1009_1/am4655/stddft)"
+}

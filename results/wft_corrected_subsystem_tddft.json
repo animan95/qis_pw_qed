@@ -1,0 +1,60 @@
+{
+  "provenance": {
+    "python": "3.10.1",
+    "platform": "Linux-5.14.0-570.134.1.el9_6.x86_64-x86_64-with-glibc2.34",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.15.2",
+      "pyscf": "2.13.0",
+      "qiskit": "1.2.4",
+      "qiskit-nature": "0.7.2",
+      "qiskit-algorithms": "0.3.1",
+      "edftpy": "0.0.1.dev0",
+      "qepy": "7.2.1rc0",
+      "dftpy": "2.2.1.dev26+ga8abae515",
+      "ase": "3.28.0"
+    },
+    "code": {
+      "QIS_QE_commit": "b0b402cd6a2f9d01ccbc3468df3ddb21f203c459",
+      "casidapy_path": "/projectsn/mp1009_1/am4655/casidapy",
+      "pyscf_embed_source": "JezsMartinez/pyscf@PRG_2026 vemb spline, ported to casidapy.pyscf_embed (injected at get_hcore)"
+    },
+    "venv": "stddft (/projectsn/mp1009_1/am4655/stddft)"
+  },
+  "generated": "2026-09-28 14:27:37",
+  "meta": {
+    "system": "LiCN dimer in Ar",
+    "scheme": "diagonal CASSCF correction + WFT dipoles, TDDFT coupling kept",
+    "matching": "dipole-character driven, gated (max_cost=0.4), singlet-filtered"
+  },
+  "data": {
+    "tddft_fragment_bright_eV": [
+      4.041561849659722,
+      4.052358979583598
+    ],
+    "casscf_correction_bright_eV": [
+      5.10669542485289,
+      5.119242613217819
+    ],
+    "corrected_coupled_eV": [
+      5.060658156274622,
+      5.076037053623219,
+      5.10669542485289,
+      5.119242613217819,
+      6.828110222014752,
+      6.850430115849744,
+      6.990830559750935,
+      6.994725282366099
+    ],
+    "corrected_coupled_mu": [
+      0.1309833228014654,
+      0.13113591661441,
+      0.13146546062839387,
+      0.13059365729762973,
+      3.660724346371669e-05,
+      0.00017180567669147976,
+      0.0011228019732334124,
+      0.0007416431676497155
+    ]
+  }
+}

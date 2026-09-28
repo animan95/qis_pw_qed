@@ -1,0 +1,76 @@
+{
+  "provenance": {
+    "python": "3.10.1",
+    "platform": "Linux-5.14.0-570.134.1.el9_6.x86_64-x86_64-with-glibc2.34",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.15.2",
+      "pyscf": "2.13.0",
+      "qiskit": "1.2.4",
+      "qiskit-nature": "0.7.2",
+      "qiskit-algorithms": "0.3.1",
+      "edftpy": "0.0.1.dev0",
+      "qepy": "7.2.1rc0",
+      "dftpy": "2.2.1.dev26+ga8abae515",
+      "ase": "3.28.0"
+    },
+    "code": {
+      "QIS_QE_commit": "b0b402cd6a2f9d01ccbc3468df3ddb21f203c459",
+      "casidapy_path": "/projectsn/mp1009_1/am4655/casidapy",
+      "pyscf_embed_source": "JezsMartinez/pyscf@PRG_2026 vemb spline, ported to casidapy.pyscf_embed (injected at get_hcore)"
+    },
+    "venv": "stddft (/projectsn/mp1009_1/am4655/stddft)"
+  },
+  "generated": "2026-09-28 14:27:28",
+  "meta": {
+    "system": "LiCN dimer in Ar (size_small, sep 5.31 A)",
+    "vemb": "dimer_u/sub_licn_{a,b}.snpy (18-Ar, ONCV+gaussians, converged)",
+    "coupling": "Forster dipole-dipole",
+    "cavity": "omega_c resonant with bright exciton",
+    "lambda_sweep": [
+      0.01,
+      0.03,
+      0.05
+    ]
+  },
+  "data": {
+    "excitons_eV": [
+      5.060639499167798,
+      5.076032122628153,
+      5.106714025212731,
+      5.119247600962191
+    ],
+    "osc": [
+      0.002212960710144546,
+      0.002093048969215607,
+      0.0020764997214892606,
+      0.0021841362869851463
+    ],
+    "davydov_meV": 15.392623460353947,
+    "qed": {
+      "pf": {
+        "polariton_eV": [
+          4.992018215331999,
+          5.082103617996257,
+          5.154557915597625
+        ],
+        "rabi_meV": 162.5397002656257
+      },
+      "jc": {
+        "polariton_eV": [
+          5.005210357363274,
+          5.116068640972323
+        ],
+        "rabi_meV": 110.85828360904858
+      },
+      "tddft": {
+        "polariton_eV": [
+          4.990887667048949,
+          5.0825366212668985,
+          5.1535058010377135
+        ],
+        "rabi_meV": 162.61813398876424
+      }
+    }
+  }
+}

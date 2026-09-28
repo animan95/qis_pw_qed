@@ -1,0 +1,17 @@
+# virtualenv / caches
+qisenv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# environment-specific shims
+libfix/
+
+# run artifacts / large binaries (regenerate per README)
+logs/
+data/
+*.snpy
+*.out
+*.err
+*.log
+slurm-*.out
