@@ -12,6 +12,26 @@ This repo holds **drivers and (small) results only**. The library code lives in
 (qiskit exact-diagonalization / qEOM). Large binaries (`.snpy` potentials, raw QE
 output) are **not** committed — see [Reproducing](#reproducing).
 
+## Figures
+
+![LiCN excitation by method, gas vs embedded](figures/fig1_method_comparison.png)
+
+*First bright singlet excitation of LiCN by **TDDFT/PBE**, **CASSCF** (via QIS_QE), and
+**EOM-CCSD**, gas vs Ar-embedded. The three methods disagree by **~1.7 eV** — the core
+motivation for correcting TDDFT with a wavefunction method. CAS(6,6)/cc-pVDZ, GTO embedding.*
+
+![WFT correction of subsystem TDDFT](figures/fig2_wft_correction.png)
+
+*WFT correction of the subsystem-TDDFT fragment states: CASSCF scissors the LiCN bright
+doublet up by **+1.07 eV** and enhances the transition dipole **~6×** (0.02→0.13 a.u.).
+Only the on-site energies + dipoles are corrected; the TDDFT inter-fragment coupling is kept.*
+
+![Cavity-QED polaritons of the embedded dimer](figures/fig3_qed_polaritons.png)
+
+*Cavity-QED polaritons of the embedded LiCN dimer (λ=0.05): the bright Frenkel exciton splits
+into lower/upper polaritons. **JC** gives a clean **111 meV** Rabi splitting; **PF** and
+**QED-TDDFT** give **~163 meV** plus the dipole-self-energy-shifted structure.*
+
 ## Where the results come from
 
 | result file | system | embedding potential (`v_emb`) | methods |
@@ -53,8 +73,10 @@ every result under the `provenance` key.
 ```
 scripts/            driver / demo scripts (phase0, phase1, wft_correct_demo, qEOM slurm)
 generate_results.py one-shot generator for the committed result set
+plots.py            figures from results/*.json (Okabe-Ito, colorblind-safe)
 provenance.py       software/version capture
 results/*.json      committed results (small, provenance-stamped)
+figures/*.png       committed figures (see above)
 env_qis.sh          environment (module libs + venv + paths)
 ```
 
